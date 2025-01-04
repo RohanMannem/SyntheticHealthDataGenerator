@@ -6,22 +6,23 @@ Welcome to the **Synthetic Healthcare Data Generator**, a project designed to le
 
 ## **Features**
 - **Healthcare Data Generation**: Generate synthetic datasets based on real-world schemas.
-- **Multi-Model Integration**: Compare results from multiple LLMs, such as GPT-4, LLaMA, and Falcon, accessed via API.
+- **Multi-Model Integration**: Compare results from multiple LLMs, such as GPT-4, LLaMA, etc., accessed via API.
 - **Validation & Analysis**:
   - Schema validation to ensure data consistency.
   - Statistical analysis to compare synthetic data against real datasets.
   - Utility analysis to test synthetic data in downstream machine learning tasks.
-- **Scalable Framework**: Automated data generation and validation via AWS Lambda.
 
 ---
 
 ## **Project Workflow**
 1. **Dataset Preparation**:
-   - Preprocessed healthcare data schema with 14 attributes (e.g., Name, Age, Gender, Diagnosis). Original dataset: https://www.kaggle.com/datasets/prasad22/healthcare-dataset
+   - Preprocessed healthcare data schema with 15 attributes (e.g., Name, Age, Gender, Medical Condition).
+   - Original dataset: https://www.kaggle.com/datasets/prasad22/healthcare-dataset
 2. **Prompt Engineering**:
    - Designed prompts at three levels (Basic, Improved, Advanced) to enhance data generation.
+   - Provided developer instructions at three levels (Basic, Improved, Advanced) which the model should follow, regardless of messages sent by the user.
 3. **Data Generation**:
-   - Generated synthetic datasets using APIs for various open-source LLMs.
+   - Generated partial synthetic datasets using APIs for various open-source LLMs.
 4. **Validation**:
    - Ensured data consistency, schema adherence, and statistical similarity.
 5. **Benchmarking**:
@@ -73,27 +74,27 @@ Measured by the similarity between real and synthetic data distributions using s
 
 | **Model**   | **KL Divergence** | **Correlation** |
 |-------------|-------------------|-----------------|
-| GPT-4       | 0.12              | 0.95            |
-| LLaMA       | 0.20              | 0.89            |
-| Falcon      | 0.15              | 0.92            |
+| GPT-4       |               |             |
+| LLaMA       |               |             |
+| Falcon      |               |             |
 
 ### Diversity
 Analyzed using measures of data uniqueness and variety.
 
 | **Model**   | **Uniqueness (%)** | **Diversity Score** |
 |-------------|--------------------|---------------------|
-| GPT-4       | 98.7               | High                |
-| LLaMA       | 96.5               | Moderate            |
-| Falcon      | 97.2               | High                |
+| GPT-4       |                |                 |
+| LLaMA       |                |             |
+| Falcon      |                |                 |
 
 ### Cost & Efficiency
 Time and cost benchmarks for generating 1,000 rows of data.
 
-| **Model**   | **Time (s)** | **Cost (USD)** |
-|-------------|--------------|----------------|
-| GPT-4       | 15           | $0.25          |
-| LLaMA       | 20           | $0.15          |
-| Falcon      | 18           | $0.10          |
+| **Model**   | **Time (m)** | **Cost (USD)** | **Input Cost (USD)** | **Output Cost (USD)** |
+|-------------|--------------|----------------|----------------------|-----------------------|
+| GPT-4o 2024-08-06       | 60           | $1.75          | $0.13                 | $1.61                 |
+| LLaMA       |            |      |
+| Falcon      |            |      |
 
 ---
 

@@ -76,7 +76,6 @@ Measured by the similarity between real and synthetic data distributions using s
 |-------------|-------------------|-----------------|
 | GPT-4       |               |             |
 | LLaMA       |               |             |
-| Falcon      |               |             |
 
 ### Diversity
 Analyzed using measures of data uniqueness and variety.
@@ -85,16 +84,14 @@ Analyzed using measures of data uniqueness and variety.
 |-------------|--------------------|---------------------|
 | GPT-4       |                |                 |
 | LLaMA       |                |             |
-| Falcon      |                |                 |
 
 ### Cost & Efficiency
 Time and cost benchmarks for generating 1,000 rows of data.
 
-| **Model**   | **Time (m)** | **Cost (USD)** | **Input Cost (USD)** | **Output Cost (USD)** |
+| **Model**   | **Time** | **Cost (USD)** | **Input Cost (USD)** | **Output Cost (USD)** |
 |-------------|--------------|----------------|----------------------|-----------------------|
-| GPT-4o 2024-08-06       | 60           | $1.75          | $0.13                 | $1.61                 |
-| LLaMA       |            |      |
-| Falcon      |            |      |
+| GPT-4o 2024-08-06       | 60m           | $1.75          | $0.13                 | $1.61                 |
+| LLaMA 3.1-70b       | 3m 57.8s           |      |
 
 ---
 

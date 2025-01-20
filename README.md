@@ -78,7 +78,8 @@ Time and cost benchmarks for generating 1,000 rows of data.
 | GPT-4o 2024-08-06       | 60m           | $1.75          | $0.13                 | $1.61                 |
 | LLaMA 3.1-70b       | 3m 57.8s           |      |
 
-More detailed statiscal comparisons (such KL divergence, predictive utility, visual distribution comparisons, etc.) can be seen with {model}_data_validation.ipynb scripts.
+***More detailed statiscal comparisons (such KL divergence, predictive utility, visual distribution comparisons, etc.) can be seen with {model}_data_validation.ipynb scripts.***
+
 ---
 
 ## **Getting Started**

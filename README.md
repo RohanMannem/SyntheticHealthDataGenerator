@@ -69,21 +69,6 @@ The synthetic data follows the schema below:
 ---
 
 ## **Model Results Comparison**
-### Realism
-Measured by the similarity between real and synthetic data distributions using statistical tests like KL divergence.
-
-| **Model**   | **KL Divergence** | **Correlation** |
-|-------------|-------------------|-----------------|
-| GPT-4       |               |             |
-| LLaMA       |               |             |
-
-### Diversity
-Analyzed using measures of data uniqueness and variety.
-
-| **Model**   | **Uniqueness (%)** | **Diversity Score** |
-|-------------|--------------------|---------------------|
-| GPT-4       |                |                 |
-| LLaMA       |                |             |
 
 ### Cost & Efficiency
 Time and cost benchmarks for generating 1,000 rows of data.
@@ -93,6 +78,7 @@ Time and cost benchmarks for generating 1,000 rows of data.
 | GPT-4o 2024-08-06       | 60m           | $1.75          | $0.13                 | $1.61                 |
 | LLaMA 3.1-70b       | 3m 57.8s           |      |
 
+More detailed statiscal comparisons (such KL divergence, predictive utility, visual distribution comparisons, etc.) can be seen with {model}_data_validation.ipynb scripts.
 ---
 
 ## **Getting Started**
